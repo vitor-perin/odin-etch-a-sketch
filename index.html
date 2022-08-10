@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/260630f24a.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="center">
+        <div class="left-panel">
+            <button class="fa-solid fa-shuffle fa-2xl round" value="random"></button>
+            <input id="color-selector" type="color">
+            <button class="fa-solid fa-paintbrush fa-2xl round" value="paint"></button>
+            <button class="fa-solid fa-eraser fa-2xl round" value="eraser"></button>
+            <button class="fa-solid fa-arrows-rotate fa-2xl round" value="reset"></button>
+        </div>
+        <div class="central-panel">
+            <div class="grid-container"></div>
+            <div class="bottom-panel">
+                <div id="number">16</div>
+                <input id="size-slider" type="range" min="1" max="64" orient="vertical" value="16">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

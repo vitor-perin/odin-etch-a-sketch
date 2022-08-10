@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #232323;
+}
+
+body,html {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Left Panel*/
+
+.left-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-right: 25px;
+}
+
+input[type='color'] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+    border-radius: 50%;
+    width: 10vh;
+    height: 10vh;
+    outline: none;
+}
+
+input[type='color']::-webkit-color-swatch {
+    border-radius: 50%;
+    border: none;
+    box-shadow: rgba(71, 71, 71, 1) 2px 2px 8px;
+}
+
+input[type='color']::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+.round {
+    border-radius: 50%;
+    width: 10vh;
+    height: 10vh;
+    background-color: #333333;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    box-shadow: 2px 2px 8px #474747;
+    transition: ease-in-out 0.3s;
+}
+
+.round:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/*Central Panel*/
+
+.central-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    min-height: 75vh;
+    min-width: 75vh;
+    box-shadow: 4px 4px 8px #535353;
+    background-color: #fff;
+}
+
+.grid-item {
+    user-select: none;
+}
+
+/*Bottom Panel*/
+
+.bottom-panel {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+    gap: 8px;
+}
+
+input[type='range'] {
+    width: 65%;
+    -webkit-appearance: none;
+    height: 8px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    outline: none;
+}
+
+input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: #fff;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+}
+
+#number {
+    color: #333333;
+    background-color: #fff;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 50%;
+}
+
+/*Activated Button*/
+
+.active {
+    background-color: #fff;
+    color: #000;
+}
